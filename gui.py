@@ -22,7 +22,6 @@ class Window:
 
         e_datefrom = Entry(self.handler)
         e_datefrom.place (x=240, y=130)
-
         e_dateto = Entry(self.handler)
         e_dateto.place (x=240, y=180)
 
@@ -46,6 +45,8 @@ class Window:
             print(datetime.now().year)
             return False
         return True
+
+    
 
     
 

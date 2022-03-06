@@ -1,14 +1,14 @@
 from gui import *
 from holidays import Holidays
 
-def main():
+
+HOLIDAYS = ["Wielkanoc", "Nowy Rok", "Boże Ciało", "Święto Pracy"]
+
     window = Window()
     window.create()
     window.handler.mainloop()
 
-    holiday = Holidays()
-    example = holiday.get(window.datefrom)
-    print(example)
+    holiday = Holidays(window.datefrom, window.dateto, HOLIDAYS)
 
 if __name__ == "__main__":
     main()
